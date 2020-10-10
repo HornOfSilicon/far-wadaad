@@ -39,4 +39,5 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd lib
+          yarn version --new-version 1.0.$BUILD_NUMBER
           yarn publish
