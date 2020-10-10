@@ -31,9 +31,11 @@ jobs:
       # Runs lint
       - name: Runs lint
         run: |
+          cd lib
           yarn lint
 
       # Runs test
       - name: Runs test
         run: |
+          cd lib
           yarn test
