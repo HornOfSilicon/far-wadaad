@@ -6,6 +6,9 @@
   "repository": "https://github.com/HornOfSilicon/far-wadaad",
   "author": "HornOfSilicon",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint . --ext .js --quiet",
