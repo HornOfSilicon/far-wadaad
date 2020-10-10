@@ -1,0 +1,33 @@
+{
+  "name": "far-wadaad",
+  "version": "1.0.0",
+  "description": "Tools for Somali far Wadaad script",
+  "main": "index.js",
+  "repository": "https://github.com/HornOfSilicon/far-wadaad",
+  "author": "HornOfSilicon",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --ext .js --quiet",
+    "lint:fix": "eslint './*.js' --fix"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.14",
+    "babel-jest": "^26.5.2",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-jsdoc": "^30.6.4",
+    "jest": "^26.5.2",
+    "prettier": "2.1.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
