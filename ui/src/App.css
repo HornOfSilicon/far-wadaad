@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.text-container {
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+.text-container .text {
+  border: 0 none;
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  font-size: larger;
+}
+
+.header-yellow {
+  box-shadow: 0.5rem 0 0 #fed136, -0.5rem 0 0 #fed136;
+  background-color: #fed136;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+}
