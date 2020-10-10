@@ -39,6 +39,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd lib
-          echo build no: $BUILD_NUMBER
-          yarn version --new-version 1.0.$BUILD_NUMBER
+          echo build no: ${{ secrets.GITHUB_RUN_NUMBER }}
+          yarn version --new-version 1.0.${{ secrets.GITHUB_RUN_NUMBER }}
           yarn publish
