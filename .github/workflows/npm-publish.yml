@@ -14,6 +14,23 @@ jobs:
         uses: actions/setup-node@main
         with:
           node-version: 10.0.0
+      # install dependencies
+      - name: install dependencies
+        run: |
+          cd lib
+          yarn
+
+      # Runs lint
+      - name: Runs lint
+        run: |
+          cd lib
+          yarn lint
+
+      # Runs test
+      - name: Runs test
+        run: |
+          cd lib
+          yarn test
       - name: Publish if version has been updated
         uses: pascalgn/npm-publish-action@06e0830ea83eea10ed4a62654eeaedafb8bf50fc
         with: # All of theses inputs are optional
