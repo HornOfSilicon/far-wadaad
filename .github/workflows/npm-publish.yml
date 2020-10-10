@@ -2,7 +2,7 @@ name: npm-publish
 on:
   push:
     branches:
-      - main # Change this to your default branch
+      - issue/4-npm-publish-2
 jobs:
   npm-publish:
     name: npm-publish
@@ -14,6 +14,7 @@ jobs:
         uses: actions/setup-node@main
         with:
           node-version: 10.14.2
+          registry-url: "https://npm.pkg.github.com"
       # install dependencies
       - name: install dependencies
         run: |
@@ -31,12 +32,11 @@ jobs:
         run: |
           cd lib
           yarn test
-      - name: Publish if version has been updated
-        uses: pascalgn/npm-publish-action@06e0830ea83eea10ed4a62654eeaedafb8bf50fc
-        with: # All of theses inputs are optional
-          tag_name: "v%s"
-          tag_message: "v%s"
-          commit_pattern: "^Release (\\S+)"
-          workspace: "./lib"
-        env: # More info about the environment variables in the README
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this as is, it's automatically generated
+
+      # Publish
+      - name: Publish
+      - env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          cd lib
+          yarn publish
