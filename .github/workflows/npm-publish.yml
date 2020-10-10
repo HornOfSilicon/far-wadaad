@@ -35,8 +35,8 @@ jobs:
 
       # Publish
       - name: Publish
-      - env:
+        env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: |
+        run: |
           cd lib
           yarn publish
