@@ -40,5 +40,4 @@ jobs:
         run: |
           cd lib
           echo build no: ${GITHUB_RUN_NUMBER}
-          yarn version --new-version 1.0.${GITHUB_RUN_NUMBER}
-          yarn publish
+          yarn publish --new-version 1.0.${GITHUB_RUN_NUMBER}
