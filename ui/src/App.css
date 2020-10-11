@@ -59,4 +59,5 @@
   color: black;
   padding: 1rem;
   text-align: center;
+  white-space: break-spaces;
 }

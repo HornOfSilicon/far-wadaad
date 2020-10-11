@@ -23,7 +23,7 @@ const FarWadaad = () => {
         <div className="container">
           <div className="content">
             <h1 className="header" >Far wadaad (Somali)</h1>
-            <h3 dir="rtl" className="header-yellow">{farWadaad}</h3>
+            <p dir="rtl" className="header-yellow">{farWadaad}</p>
             <div class="text-container">
               <textarea className="text" placeholder={startText} onChange={onChange.bind(this)}></textarea>
             </div>
