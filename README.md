@@ -13,14 +13,20 @@ The repo will contains:
 
 https://www.haadka.com/far-wadaad/
 
-## Usage in your own code
+## Usage in your own code (as exernal library)
 
-The tools are in `lib` folder. The `ui` is only for testing them. In the near future, the `lib` will be exposed as an npm package.
-
-Once you get that npm package you will be able to do the following:
+Provided your solution is in javaScript, you can install the library like any Github npm Package
 
 ```
-import FarWadaadScript from 'FarWadaadScript'
+npm install @hornofsilicon/far-wadaad
+```
+
+Please note that the package is publically available however as per GitHub packages rule, you will need to create a token and add it to your .npmrc folder.
+
+After installing the package, you can do the following in your code:
+
+```
+import FarWadaadScript from '@hornofsilicon/far-wadaad'
 
 const converter = new FarWadaadScript();
 const farwadaadOutput = converter.parse('iska waran');
