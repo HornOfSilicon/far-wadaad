@@ -2,7 +2,7 @@
 
 # Far Wadaad
 
-Tools for Somali far Wadaad script. Far wadaad is one of the first Somali language scripts. It is based on Arabic abjad and reported to be invented by Sh Yusuf Al-kawnayn (Aw barkhadle).
+Tools for Somali far Wadaad script. Far wadaad is one of the first Somali language scripts. It is based on Arabic abjad and reported to be invented by Sh Yusuf Al-kawnayn (Aw barkhadle). To learn more, read [this blog post](https://www.haadka.com/blog/2020-10-11-reclaiming-somali-aw-barkhadles-script-somali-abs/)
 
 The repo will contains:
 
