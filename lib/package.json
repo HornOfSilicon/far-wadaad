@@ -2,13 +2,13 @@
   "name": "@hornofsilicon/far-wadaad",
   "version": "1.0.10",
   "description": "Tools for Somali far Wadaad script",
-  "main": "index.js",
+  "main": "FarWadaadScript.js",
   "repository": "https://github.com/HornOfSilicon/far-wadaad",
   "author": "HornOfSilicon",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
-     "access": "public"
+    "access": "public"
   },
   "scripts": {
     "test": "jest",
