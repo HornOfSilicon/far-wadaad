@@ -4,12 +4,13 @@ import React, { useState } from 'react';
 import FarWadaadScript from '../../lib/FarWadaadScript'
 
 const FarWadaad = () => {
-  const startText = 'Xaggan hoose ku qor waxaad doontid';
-  const fw = new FarWadaadScript();
+  const startText = 'Xaggan hoose ku qor waxad doontid';
+  const fw = new FarWadaadScript({ withDiacritics: true, withDaal: true });
   const [farWadaad, setFarWadaad] = useState(fw.parse(startText));
 
+
   const onChange = (event) => {
-    const converter = new FarWadaadScript();
+    const converter = new FarWadaadScript({ withDiacritics: true, withDaal: true });
     const farWadaad = converter.parse(event.target.value);
     setFarWadaad(farWadaad);
   }
