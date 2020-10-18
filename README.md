@@ -28,12 +28,17 @@ After installing the package, you can do the following in your code:
 ```
 import FarWadaadScript from '@hornofsilicon/far-wadaad'
 
-const converter = new FarWadaadScript();
+const converter = new FarWadaadScript({ withDiacritics: false, withDaal: false });
 const farwadaadOutput = converter.parse('iska waran');
 console.log(farwadaadOutput)
 // اسك ورن
 
 ```
+## FarWadaadScript Options
+
+The current options are available when creating FarWadaadScript:
+- withDiacritics (default false): if true, adds Arabic diacritics 
+- withDaal(default false): if true, replace Arabic letter ڎ with ط and ط with د
 
 ## Unit Tests
 
